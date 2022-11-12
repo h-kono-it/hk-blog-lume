@@ -13,8 +13,13 @@ bodyClass: body-post
     </nav>
 
     <time class="post-date" datetime="{{ date | date('DATETIME') }}">
-      {{ date | date('HUMAN_DATE') }}
+      投稿日：{{ date | date('DATE') }}
     </time>
+    {%- if updated %}
+    <time class="post-date" datetime="{{ updated | date('DATETIME') }}">
+      , 更新日：{{ updated | date('DATE') }}
+    </time>
+    {% endif %}
   </div>
 
   <div class="post-body">
@@ -29,14 +34,14 @@ bodyClass: body-post
     {%- set previousPost = search.previousPage(url, "type=posts") %}
     {%- if previousPost %}
     <li>
-      ← Previous: <a href="{{ previousPost.data.url }}" rel="prev">{{ previousPost.data.title }}</a>
+      ← 前へ: <a href="{{ previousPost.data.url }}" rel="prev">{{ previousPost.data.title }}</a>
     </li>
     {% endif %}
 
     {%- set nextPost = search.nextPage(url, "type=posts") %}
     {%- if nextPost %}
     <li>
-      <strong>Next: <a href="{{ nextPost.data.url }}" rel="next">{{ nextPost.data.title }}</a> →</strong>
+      <strong>次へ: <a href="{{ nextPost.data.url }}" rel="next">{{ nextPost.data.title }}</a> →</strong>
     </li>
     {% endif %}
   </ul>

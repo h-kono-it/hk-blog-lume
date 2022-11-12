@@ -10,7 +10,7 @@
     </a>
 
     <time class="postList-date" datetime="{{ post.data.date | date('DATETIME') }}">
-      {{ post.data.date | date('HUMAN_DATE') }}
+      {{ post.data.date | date('DATE') }}
     </time>
 
     {% for tag in post.data.tags %}

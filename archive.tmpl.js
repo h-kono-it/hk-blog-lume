@@ -1,5 +1,5 @@
 export const layout = "layouts/archive.njk";
-export const title = "アーカイブ";
+export const title = "ブログ記事一覧";
 
 export default function* ({ search, paginate }) {
   const posts = search.pages("type=posts", "date=desc");

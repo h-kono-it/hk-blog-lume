@@ -13,17 +13,17 @@ bodyClass: body-tag
   <ul>
     {%- if pagination.previous %}
     <li>
-      <a href="{{ pagination.previous }}" rel="prev">← Previous</a>
+      <a href="{{ pagination.previous }}" rel="prev">← 前へ</a>
     </li>
     {% endif %}
 
     <li>
-      Page {{ pagination.page }}
+      page {{ pagination.page }}
     </li>
 
     {%- if pagination.next %}
     <li>
-      <a href="{{ pagination.next }}" rel="next">Next →</a>
+      <a href="{{ pagination.next }}" rel="next">次へ →</a>
     </li>
     {% endif %}
   </ul>

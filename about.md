@@ -2,10 +2,17 @@
 layout: layouts/post.njk
 title: hkの自己紹介
 templateClass: tmpl-post
+date: 2022-11-11
+updated: 2022-11-12
 menu:
   visible: true
   order: 2
 ---
+
+# このサイトについて
+
+適当に書き散らしているだけなので過度な期待はしないでください。
+Lume という静的サイトジェネレーターを使っています（[Lume サイト](https://lume.land/)）
 
 # 略歴
 
@@ -27,6 +34,7 @@ menu:
 - フレームワーク
   - Spring（Java Web フレームワーク）
   - JakartaEE（Java Web フレームワーク）
+  - Ktor（Kotlin Web フレームワーク）
   - Doma2（Java ORM）
   - Rails（Ruby Web フレームワーク）
   - Sinatra（Ruby Web フレームワーク）
@@ -39,6 +47,6 @@ menu:
   - SQL Server
   - PostgreSQL
 
-# SNS
+# コンタクト
 
 Twitter: [hk_it7](https://twitter.com/hk_it7 "hk_it7 Twitter")

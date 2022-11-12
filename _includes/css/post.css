@@ -29,6 +29,17 @@
     max-width: 20em;
     margin-bottom: 0;
   }
+
+  & blockquote {
+    position: relative;
+    padding: 0.5em 15px 0.5em 15px;
+    box-sizing: border-box;
+    font-style: italic;
+    background: #f5f5f5;
+    color: #777777;
+    border-left: 4px solid #949494;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 14%);
+  }
 }
 .post-navigation {
   & ul {
