@@ -1,4 +1,4 @@
-name: Publish on Deno Deploy
+name: Publish on GitHub Pages
 
 on:
   push:
@@ -7,9 +7,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      contents: read
 
     steps:
       - name: Clone repository
@@ -22,11 +19,11 @@ jobs:
 
       - name: Build site
         run: |
-          deno task build --location=https://lume-blog.deno.dev
+          deno task build --location=https://lumeland.github.io/base-blog/
 
-      - name: Deploy to Deno Deploy
-        uses: denoland/deployctl@v1
+      - name: Deploy
+        uses: crazy-max/ghaction-github-pages@v2.0.1
         with:
-          project: lume-blog
-          import-map: "./import_map.json"
-          entrypoint: server.ts
+          build_dir: _site
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
