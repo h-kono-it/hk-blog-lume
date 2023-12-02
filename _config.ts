@@ -19,11 +19,13 @@ site
   .use(date())
   .use(codeHighlight())
   .use(basePath())
-  .use(pageFind({
-    ui: {
-      resetStyles: false,
-    },
-  }))
+  .use(
+    pageFind({
+      ui: {
+        resetStyles: false,
+      },
+    })
+  )
   .use(slugifyUrls({ alphanumeric: false }))
   .use(resolveUrls())
   .use(netlifyCMS({ netlifyIdentity: true }));
