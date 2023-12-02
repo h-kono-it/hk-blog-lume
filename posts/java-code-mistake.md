@@ -1,6 +1,7 @@
 ---
 title: Java コード入門の誤り（indexOf／lastIndexOfメソッド）
 description: hkのエンジニアブログ。Java コード入門というサイトの誤り（indexOf／lastIndexOfメソッド）の指摘とその検証のブログです。
+draft: ture
 date: 2022-11-12
 updated: 2022-11-12
 tags:

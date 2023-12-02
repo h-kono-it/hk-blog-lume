@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: hkの自己紹介
 templateClass: tmpl-post
 date: 2022-11-11
-updated: 2022-11-12
+updated: 2023-12-02
 menu:
   visible: true
   order: 2
@@ -27,6 +27,8 @@ Lume という静的サイトジェネレーターを使っています（[Lume 
   - Kotlin
   - JavaScript
   - TypeScript
+  - Rust
+  - Go
 - 補助的な言語
   - HTML
   - CSS
@@ -46,6 +48,22 @@ Lume という静的サイトジェネレーターを使っています（[Lume 
   - Oracle
   - SQL Server
   - PostgreSQL
+- クラウド
+  - AWS
+    - EC2
+    - RDS
+    - Fargate
+    - etc...
+  - GCP
+    - App Engine
+    - Cloud Run
+    - ect...
+  - 資格
+    - 基本情報技術者試験
+    - 応用情報技術者試験
+    - 情報セキュリティマネジメント試験
+    - データベーススペシャリスト試験
+    - 普通自動車運転免許（AT 限定）
 
 # コンタクト
 
